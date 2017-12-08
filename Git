@@ -1,0 +1,331 @@
+ 
+TeamLu@Admin MINGW64 /d/Git/blog
+$ git clone https://github.com/837414750/837414750.github.io.git blogPro
+Cloning into 'blogPro'...
+warning: You appear to have cloned an empty repository.
+
+TeamLu@Admin MINGW64 /d/Git/blog
+$ git clone https://github.com/837414750/837414750.github.io.git blogPro
+fatal: destination path 'blogPro' already exists and is not an empty directory.
+
+TeamLu@Admin MINGW64 /d/Git/blog
+$ git clone https://github.com/837414750/837414750.github.io.git blogPro
+Cloning into 'blogPro'...
+warning: You appear to have cloned an empty repository.
+
+TeamLu@Admin MINGW64 /d/Git/blog
+$ git clone https://github.com/837414750/837414750.github.io.git
+Cloning into '837414750.github.io'...
+warning: You appear to have cloned an empty repository.
+
+TeamLu@Admin MINGW64 /d/Git/blog
+$ git clone git@github.com:837414750/837414750.github.io.git blogPro
+fatal: destination path 'blogPro' already exists and is not an empty directory.
+
+TeamLu@Admin MINGW64 /d/Git/blog
+$ git clone git@github.com:837414750/837414750.github.io.git blogPro
+Cloning into 'blogPro'...
+The authenticity of host 'github.com (192.30.253.113)' can't be established.
+RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+Are you sure you want to continue connecting (yes/no)? y
+Please type 'yes' or 'no': yes
+Warning: Permanently added 'github.com,192.30.253.113' (RSA) to the list of known hosts.
+Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+TeamLu@Admin MINGW64 /d/Git/blog
+$ ssh-keygen -t rsa
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/TeamLu/.ssh/id_rsa):
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/TeamLu/.ssh/id_rsa.
+Your public key has been saved in /c/Users/TeamLu/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:wxo69lLnj9jUmp2LUYyetYazXvJFVNP8jC+jniOJnws TeamLu@Admin
+The key's randomart image is:
++---[RSA 2048]----+
+|              oo |
+|             . .o|
+|            .  o.|
+|       . o .  . o|
+|      . S + .  . |
+|     ..+.B o  o .|
+|    +..oE.=... o |
+|   ..o +o/o+o.   |
+|     .o.OoX=o.   |
++----[SHA256]-----+
+
+TeamLu@Admin MINGW64 /d/Git/blog
+$ git clone git@github.com:837414750/837414750.github.io.git blogPro
+Cloning into 'blogPro'...
+Warning: Permanently added the RSA host key for IP address '192.30.253.112' to the list of known hosts.
+warning: You appear to have cloned an empty repository.
+
+TeamLu@Admin MINGW64 /d/Git/blog
+$ git clone git@github.com:837414750/837414750.github.io.git
+Cloning into '837414750.github.io'...
+warning: You appear to have cloned an empty repository.
+
+TeamLu@Admin MINGW64 /d/Git/blog
+$ cd blogPro/
+
+TeamLu@Admin MINGW64 /d/Git/blog/blogPro (master)
+$ ls
+
+TeamLu@Admin MINGW64 /d/Git/blog/blogPro (master)
+$ ls a
+ls: cannot access 'a': No such file or directory
+
+TeamLu@Admin MINGW64 /d/Git/blog/blogPro (master)
+$ cd ..
+
+TeamLu@Admin MINGW64 /d/Git/blog
+$ cd 837414750.github.io/
+
+TeamLu@Admin MINGW64 /d/Git/blog/837414750.github.io (master)
+$ git add *
+warning: LF will be replaced by CRLF in demo/js/jquery-1.7.2.min.js.
+The file will have its original line endings in your working directory.
+
+TeamLu@Admin MINGW64 /d/Git/blog/837414750.github.io (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   demo/index.html
+        new file:   demo/js/jquery-1.7.2.min.js
+        new file:   demo/js/script.js
+
+
+TeamLu@Admin MINGW64 /d/Git/blog/837414750.github.io (master)
+$ git commit -m 'first commit'
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'TeamLu@Admin.(none)')
+
+TeamLu@Admin MINGW64 /d/Git/blog/837414750.github.io (master)
+$ git config --global user.email lyjluyongjun@126.com
+
+TeamLu@Admin MINGW64 /d/Git/blog/837414750.github.io (master)
+$ git config --global user.name luyongjun
+
+TeamLu@Admin MINGW64 /d/Git/blog/837414750.github.io (master)
+$ git commit -m 'first commit'
+[master (root-commit) 1d45b45] first commit
+ 3 files changed, 69 insertions(+)
+ create mode 100644 demo/index.html
+ create mode 100644 demo/js/jquery-1.7.2.min.js
+ create mode 100644 demo/js/script.js
+
+TeamLu@Admin MINGW64 /d/Git/blog/837414750.github.io (master)
+$ git push git@github.com:837414750/837414750.github.io.git
+Counting objects: 7, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (7/7), 34.48 KiB | 1.19 MiB/s, done.
+Total 7 (delta 0), reused 0 (delta 0)
+To github.com:837414750/837414750.github.io.git
+ * [new branch]      master -> master
+
+TeamLu@Admin MINGW64 /d/Git/blog/837414750.github.io (master)
+$ git log
+commit 1d45b45726ceb73307501dafc6ac8882347240d5 (HEAD -> master)
+Author: luyongjun <lyjluyongjun@126.com>
+Date:   Fri Dec 8 13:26:10 2017 +0800
+
+    first commit
+
+TeamLu@Admin MINGW64 /d/Git/blog/837414750.github.io (master)
+$ git status
+On branch master
+Your branch is based on 'origin/master', but the upstream is gone.
+  (use "git branch --unset-upstream" to fixup)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   demo/js/script.js
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+TeamLu@Admin MINGW64 /d/Git/blog/837414750.github.io (master)
+$ git add demo/js/*
+
+TeamLu@Admin MINGW64 /d/Git/blog/837414750.github.io (master)
+$ git status
+On branch master
+Your branch is based on 'origin/master', but the upstream is gone.
+  (use "git branch --unset-upstream" to fixup)
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   demo/js/script.js
+
+
+TeamLu@Admin MINGW64 /d/Git/blog/837414750.github.io (master)
+$ git commit -m 'second'
+[master 4625a21] second
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+TeamLu@Admin MINGW64 /d/Git/blog/837414750.github.io (master)
+$ git log
+commit 4625a21a678fcb4de4e62fa2bcb734c3c73f5d6d (HEAD -> master)
+Author: luyongjun <lyjluyongjun@126.com>
+Date:   Fri Dec 8 13:42:32 2017 +0800
+
+    second
+
+commit 1d45b45726ceb73307501dafc6ac8882347240d5
+Author: luyongjun <lyjluyongjun@126.com>
+Date:   Fri Dec 8 13:26:10 2017 +0800
+
+    first commit
+
+TeamLu@Admin MINGW64 /d/Git/blog/837414750.github.io (master)
+$ git -h
+Unknown option: -h
+usage: git [--version] [--help] [-C <path>] [-c name=value]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+TeamLu@Admin MINGW64 /d/Git/blog/837414750.github.io (master)
+$ git --help
+usage: git [--version] [--help] [-C <path>] [-c name=value]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone      Clone a repository into a new directory
+   init       Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add        Add file contents to the index
+   mv         Move or rename a file, a directory, or a symlink
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect     Use binary search to find the commit that introduced a bug
+   grep       Print lines matching a pattern
+   log        Show commit logs
+   show       Show various types of objects
+   status     Show the working tree status
+
+grow, mark and tweak your common history
+   branch     List, create, or delete branches
+   checkout   Switch branches or restore working tree files
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   merge      Join two or more development histories together
+   rebase     Reapply commits on top of another base tip
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch      Download objects and refs from another repository
+   pull       Fetch from and integrate with another repository or a local branch
+   push       Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+
+TeamLu@Admin MINGW64 /d/Git/blog/837414750.github.io (master)
+$ git remote
+origin
+
+TeamLu@Admin MINGW64 /d/Git/blog/837414750.github.io (master)
+$ git remote origin
+error: Unknown subcommand: origin
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+
+TeamLu@Admin MINGW64 /d/Git/blog/837414750.github.io (master)
+$ git push origin https://github.com/837414750/837414750.github.io.git
+fatal: remote part of refspec is not a valid name in https://github.com/837414750/837414750.github.io.git
+
+TeamLu@Admin MINGW64 /d/Git/blog/837414750.github.io (master)
+$ git remote origin
+error: Unknown subcommand: origin
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+
+TeamLu@Admin MINGW64 /d/Git/blog/837414750.github.io (master)
+$ git push https://github.com/837414750/837414750.github.io.git
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 441 bytes | 220.00 KiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/837414750/837414750.github.io.git
+   1d45b45..4625a21  master -> master
+
+TeamLu@Admin MINGW64 /d/Git/blog/837414750.github.io (master)
+$ git log
+commit 4625a21a678fcb4de4e62fa2bcb734c3c73f5d6d (HEAD -> master)
+Author: luyongjun <lyjluyongjun@126.com>
+Date:   Fri Dec 8 13:42:32 2017 +0800
+
+    second
+
+commit 1d45b45726ceb73307501dafc6ac8882347240d5
+Author: luyongjun <lyjluyongjun@126.com>
+Date:   Fri Dec 8 13:26:10 2017 +0800
+
+    first commit
+
+TeamLu@Admin MINGW64 /d/Git/blog/837414750.github.io (master)
+$
