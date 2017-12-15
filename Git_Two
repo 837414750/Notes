@@ -1,3 +1,12 @@
+echo "# newProject" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/837414750/newProject.git
+git push -u origin master
+
+------------------------------------
+
 a) git init (创建仓库)
 b) git add 文件名   // 把文件放在暂存区
    1.git add -A //大写的A 全部加入缓存区
@@ -139,3 +148,5 @@ gulp-htmlmin 压缩html
 gulp-rev 添加版本号
 gulp-rev-collector 内容替换
 gulp-useref
+
+
