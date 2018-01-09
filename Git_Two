@@ -75,6 +75,8 @@ github
 
 1. 创建密钥
    a) ssh-keygen -t rsa
+   
+   秘钥地址一般在(windows机器)：C:\Users\TeamLu\.ssh
 
 
 
@@ -148,5 +150,6 @@ gulp-htmlmin 压缩html
 gulp-rev 添加版本号
 gulp-rev-collector 内容替换
 gulp-useref
+
 
 
